@@ -10,7 +10,7 @@ Un ejemplo clásico es el incremento de un contador compartido: si varios hilos 
 
 Para resolverlo se aplican mecanismos de **exclusión mutua**, como **semáforos** y **monitores**, que aseguran que únicamente un hilo a la vez ejecute la sección crítica, evitando errores y garantizando resultados consistentes.
 
----
+
 
 ## Semáforos y Monitores
 
@@ -30,7 +30,7 @@ En este se implementa la exclusión mutua con la palabra clave **synchronized**.
 
 Los semáforos son más flexibles para controlar recursos múltiples, mientras que los monitores simplifican la implementación al ofrecer sincronización automática de métodos.
 
----
+
 
 ## Conclusiones
 
@@ -40,4 +40,3 @@ Los semáforos y los monitores son dos enfoques complementarios que permiten res
 
 La correcta utilización de ambos mecanismos asegura que los resultados sean consistentes, confiables y reproducibles, incluso en entornos con múltiples hilos de ejecución. Además, fomentan el desarrollo de aplicaciones robustas que aprovechan la concurrencia sin sacrificar estabilidad.
 
----
