@@ -17,7 +17,7 @@ Para resolverlo se aplican mecanismos de **exclusión mutua**, como **semáforos
 Los semáforos y los monitores son mecanismos fundamentales de sincronización en la programación concurrente, diseñados para resolver el problema de la condición de carrera y garantizar la exclusión mutua en el acceso a recursos compartidos.
 
 * **Semáforo:** Un semáforo es una variable entera protegida que actúa como contador de permisos. Fue introducido por Edsger Dijkstra en 1965 y desde entonces se ha convertido en una herramienta esencial para la coordinación entre hilos. En Java, la clase Semaphore implementa esta funcionalidad. Un semáforo puede inicializarse con uno o varios permisos. Cuando un hilo desea acceder a un recurso, debe ejecutar acquire(). Si hay permisos disponibles, el semáforo los concede y el hilo continúa; si no, el hilo queda bloqueado hasta que otro hilo ejecute release(), liberando un permiso. Este mecanismo asegura que solo un número controlado de hilos acceda simultáneamente al recurso, lo que resulta muy útil en problemas de concurrencia con acceso limitado, como la gestión de conexiones o el control de buffers.
-
+![text alt}(ruta/a/la/imagen.png)
 
 * **Monitor:** Un monitor es una abstracción de mayor nivel que combina tanto datos como procedimientos sincronizados. En Java, cada objeto puede funcionar como monitor gracias a la palabra clave synchronized. Un método marcado como sincronizado solo puede ser ejecutado por un hilo a la vez, mientras que los demás deben esperar hasta que la ejecución finalice. Los monitores también ofrecen mecanismos de comunicación entre hilos mediante wait(), notify() y notifyAll(), lo que permite una coordinación más estructurada.
 
