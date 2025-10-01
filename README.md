@@ -12,7 +12,7 @@ Para resolverlo se aplican mecanismos de **exclusión mutua**, como **semáforos
 
 ---
 
-## Semáforos y Monitores en Java
+## Semáforos y Monitores
 
 Los semáforos y los monitores son mecanismos fundamentales de sincronización en la programación concurrente, diseñados para resolver el problema de la condición de carrera y garantizar la exclusión mutua en el acceso a recursos compartidos.
 
