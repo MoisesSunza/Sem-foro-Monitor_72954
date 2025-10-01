@@ -22,6 +22,8 @@ Los semáforos y los monitores son mecanismos fundamentales de sincronización e
 
 * **Monitor:** Un monitor es una abstracción de mayor nivel que combina tanto datos como procedimientos sincronizados. En Java, cada objeto puede funcionar como monitor gracias a la palabra clave synchronized. Un método marcado como sincronizado solo puede ser ejecutado por un hilo a la vez, mientras que los demás deben esperar hasta que la ejecución finalice. Los monitores también ofrecen mecanismos de comunicación entre hilos mediante wait(), notify() y notifyAll(), lo que permite una coordinación más estructurada.
 
+![alt text](https://github.com/MoisesSunza/Sem-foro-Monitor_72954/blob/main/Monitor.png)
+
 Los semáforos son más flexibles para controlar recursos múltiples, mientras que los monitores simplifican la implementación al ofrecer sincronización automática de métodos.
 
 ---
